@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarvnipun Kaur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #55555a;
+      --line: #e2e2e0;
+      --accent: #3a3a4a;
+      --bg: #fdfdfc;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      color: var(--ink);
+      background: var(--bg);
+      margin: 0;
+      line-height: 1.55;
+      font-size: 19px;
+    }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 64px 24px 96px; }
+
+    header { text-align: center; margin-bottom: 12px; }
+    h1 {
+      font-weight: 600;
+      font-size: 2.6rem;
+      letter-spacing: 0.01em;
+      margin: 0 0 6px;
+    }
+    .tagline { font-style: italic; color: var(--muted); font-size: 1.1rem; margin: 0 0 4px; }
+    .contact { color: var(--muted); font-size: 1rem; margin: 8px 0 0; }
+    .contact a { color: var(--muted); }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin: 26px 0 8px;
+    }
+    .actions a {
+      display: inline-block;
+      padding: 8px 18px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--accent);
+      font-size: 1rem;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .actions a:hover { background: #f2f2ef; border-color: #cfcfca; }
+    .actions a.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .actions a.primary:hover { background: #26262f; }
+
+    hr.rule { border: none; border-top: 1px solid var(--line); margin: 40px 0 0; }
+
+    section { margin-top: 34px; }
+    h2 {
+      font-weight: 600;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 6px;
+      margin: 0 0 16px;
+    }
+
+    a { color: var(--ink); text-decoration: underline; text-decoration-color: #c9c9c4; text-underline-offset: 2px; }
+    a:hover { text-decoration-color: var(--ink); }
+
+    .lead { color: var(--muted); margin: 0 0 8px; }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: baseline;
+    }
+    .row .what { flex: 1; }
+    .row .when { color: var(--muted); font-size: 0.95rem; white-space: nowrap; font-style: italic; }
+    .sub { color: var(--muted); font-size: 1rem; margin: 2px 0 0; }
+    .item { margin-bottom: 14px; }
+    .item:last-child { margin-bottom: 0; }
+
+    ul { margin: 0; padding-left: 1.2em; }
+    ul li { margin-bottom: 10px; }
+    ul li:last-child { margin-bottom: 0; }
+    ul.tight li { margin-bottom: 6px; }
+    .note { color: var(--muted); font-size: 0.95rem; }
+    .paper-title { font-style: italic; }
+
+    footer { margin-top: 56px; text-align: center; color: var(--muted); font-size: 0.9rem; }
+
+    @media (max-width: 520px) {
+      body { font-size: 18px; }
+      .wrap { padding: 40px 18px 72px; }
+      h1 { font-size: 2.1rem; }
+      .row { flex-direction: column; gap: 0; }
+      .row .when { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1>Sarvnipun Kaur</h1>
+      <p class="tagline">PhD Candidate in Economics, Plaksha University</p>
+      <p class="contact">
+        <a href="mailto:sarvnipun.kaur@plaksha.edu.in">sarvnipun.kaur@plaksha.edu.in</a> &nbsp;·&nbsp; Mohali, India
+      </p>
+
+      <!-- EDIT the href values below to your real profile URLs -->
+      <nav class="actions">
+        <a class="primary" href="cv.pdf">Download CV (PDF)</a>
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/sarvnipun-kaur/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </header>
+
+    <hr class="rule">
+
+    <section>
+      <h2>Research Interests</h2>
+      <p class="lead">Applied microeconomics focused on law, policy design, and labour market institutions.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+
+      <div class="item">
+        <div class="row">
+          <div class="what"><strong>Ph.D. in Economics</strong>, Plaksha University</div>
+          <div class="when">Aug 2022 – Present</div>
+        </div>
+        <p class="sub">Occasional Ph.D. Student, Imperial College London (Jan 2026 – Present)</p>
+      </div>
+
+      <div class="item">
+        <div class="row">
+          <div class="what"><strong>M.Phil. in Economics</strong>, Panjab University</div>
+          <div class="when">2021</div>
+        </div>
+        <p class="sub">Dissertation: <em>Pattern of Economic Development of Indian States: A Comparative Analysis of Punjab and Haryana</em></p>
+      </div>
+
+      <div class="item">
+        <div class="row">
+          <div class="what"><strong>M.A. in Economics</strong>, Panjab University</div>
+          <div class="when">2018</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="row">
+          <div class="what"><strong>B.Com. (Honours)</strong>, Jesus and Mary College, University of Delhi</div>
+          <div class="when">2015</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Working Papers</h2>
+      <ul>
+        <li>
+          Kaur, S.; Singh, P.; Arora, A. <span class="paper-title">Cinderella No More: Night Shift Bans and Women's Employment in India.</span>
+          <span class="note">September 2025. Working Paper.</span>
+        </li>
+        <li>
+          Kaur, S.; Singh, P.; Arora, A. <span class="paper-title">Engaging Demand: Teaching Microeconomics in a Virtual Class.</span>
+          <span class="note">August 2023. Available at SSRN.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Work in Progress</h2>
+      <ul>
+        <li>
+          <span class="paper-title">Incentives, Effort, and Gender in Professional Tennis</span> (with Prakarsh Singh).
+          <span class="note">Measures effort responses to changes in prize structure using match-level performance and ability data with a difference-in-differences design.</span>
+        </li>
+        <li>
+          <span class="paper-title">Employment Protection Design and Firm Litigation: Evidence from Gujarat.</span>
+          <span class="note">Uses spatial variation in labour law within Gujarat to test whether the design of employment protection legislation shapes firm litigation.</span>
+        </li>
+        <li>
+          <span class="paper-title">Dismantling Dismissal Protection: Evidence from Indian Plant-Level Data</span> (with Prakarsh Singh and Saurabh Gupta).
+          <span class="note">Uses plant-level Annual Survey of Industries panel data and staggered difference-in-differences across reforming states to estimate how removing dismissal protections and increasing severance reshapes employment and wages across firm sizes.</span>
+        </li>
+        <li>
+          <span class="paper-title">Front-Loaded vs. Back-Loaded Incentives: Experimental Evidence.</span>
+          <span class="note">Lab experiments testing theoretical predictions on incentive timing and its effects on effort, persistence, and performance.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publications &amp; Reports</h2>
+      <ul>
+        <li>Anand, B.; Bomjan, B.; Kaur, S. "The Curious Case of Indian Working Women." <em>LiveMint</em> (March 8, 2022).</li>
+        <li>Kaur, S.; Singh, A. "No Cabaret, Crooning or Cocktails: How Laws Impact Women in India's Hospitality Industry." <em>ThePrint</em> (March 13, 2022).</li>
+        <li>Anand, B.; Kaur, S.; Kaur, S. (2020). "Labour Pains: Status Check on Reforms in Employment Protection Legislation." In <em>Regulation for New Realities: A Cross-Sectoral Analysis during COVID-19</em>, pp. 47–68. Centre for Civil Society.</li>
+        <li>Anand, B.; Kaur, S. (2022). "State of Discrimination Report: A Sub-National Comparison of Legal Barriers to Women's Right to Choose Work in India."</li>
+        <li>Anand, B.; Kaur, S. "What Can We Expect from the Labour Codes?" Teamlease RegTech Blog (November 18, 2021).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Teaching Experience</h2>
+      <div class="item">
+        <p style="margin:0 0 2px;"><strong>Teaching Assistant</strong>, Plaksha University</p>
+        <p class="sub">Undergraduate modules: Microeconomics, Experimental Economics, Environmental Economics.</p>
+      </div>
+      <div class="item">
+        <p style="margin:0 0 2px;"><strong>Guest Faculty</strong>, Panjab University</p>
+        <p class="sub">Introductory Microeconomics, Introductory Macroeconomics, Indian Economic Issues I.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Presentations</h2>
+      <ul class="tight">
+        <li>Royal Economic Society (RES), Newcastle University, UK (June 2026).</li>
+        <li>LEO Economics Conference, Plaksha University (April 2026).</li>
+        <li>Annual Conference on Economic Growth and Development (ACEGD), Indian Statistical Institute, Delhi (December 2025).</li>
+        <li>PhD Colloquium, Indira Gandhi Institute of Development Research (IGIDR), Mumbai (October 2025).</li>
+        <li>LEO Economics Conference, Plaksha University (April 2025).</li>
+        <li>Chandigarh Social Science Congress VII (CHASSCONG), Chandigarh (2017): "Right to Elementary Education: An Effectiveness, Efficiency and Economy Evaluation."</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Fellowships, Honors &amp; Awards</h2>
+      <ul class="tight">
+        <li>Plaksha International Fellowship (2025).</li>
+        <li>J-PAL Research for Impact Fellowship (2023).</li>
+        <li>Plaksha Research Fellowship (2022).</li>
+        <li>UGC-NET (Eligibility for Lectureship), India (2017).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p class="lead">Software: R, Stata, LaTeX.</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Sarvnipun Kaur
+    </footer>
+
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
